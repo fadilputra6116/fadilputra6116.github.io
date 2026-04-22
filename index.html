@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonsdale Buses Limited | Transportasi Bus & Coach Terpercaya</title>
+    <style>
+        /* CSS Variables & Base */
+        :root {
+            --primary-blue: #1e3a8a;
+            --accent-yellow: #facc15;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-white: #ffffff;
+            --bg-section: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-yellow);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)), 
+                        url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-btn {
+            background-color: var(--accent-yellow);
+            color: var(--primary-blue);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background-color: #eab308;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            background: var(--bg-section);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--accent-yellow);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        /* About & Info */
+        .info-section {
+            padding: 5rem 5%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .info-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .info-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .info-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 15px 15px 0 var(--primary-blue);
+        }
+
+        .address-card {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 12px;
+        }
+
+        .address-card h4 {
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            background: white;
+            border-top: 1px solid #eee;
+        }
+
+        footer p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .info-section { flex-direction: column-reverse; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lonsdale <span>Buses</span></div>
+        <div style="font-weight: 600; font-size: 0.9rem; color: var(--text-light);">Morecambe, UK</div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Perjalanan Aman, Nyaman, Terpercaya.</h1>
+            <p>Solusi transportasi bus dan pelatih terkemuka di Morecambe untuk keperluan sekolah, wisata grup, dan acara khusus.</p>
+            <a href="#services" class="cta-btn">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Layanan Utama Kami</h2>
+            <p>Menghubungkan destinasi Anda dengan armada berkualitas.</p>
+        </div>
+        <div class="grid">
+            <div class="service-card">
+                <h3>Penyewaan Bus Pariwisata</h3>
+                <p>Armada modern untuk perjalanan wisata jarak jauh maupun dekat dengan pengemudi profesional yang berpengalaman.</p>
+            </div>
+            <div class="service-card">
+                <h3>Transportasi Sekolah</h3>
+                <p>Layanan antar-jemput sekolah yang aman dan tepat waktu, memenuhi semua standar keselamatan transportasi Inggris.</p>
+            </div>
+            <div class="service-card">
+                <h3>Kontrak Perjalanan Grup</h3>
+                <p>Solusi transportasi untuk acara perusahaan, pernikahan, atau acara olahraga dengan jadwal yang fleksibel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-image">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80" alt="Professional Coach Bus">
+        </div>
+        <div class="info-text">
+            <h2>Tentang Lonsdale Buses Ltd</h2>
+            <p>Beroperasi dari "The Coach House" di Morecambe, kami bangga melayani komunitas lokal dengan standar operasional yang tinggi. Keamanan penumpang adalah prioritas utama kami, didukung oleh pemeliharaan armada yang ketat dan staf yang berdedikasi.</p>
+            
+            <div class="address-card">
+                <h4>Alamat Kantor & Pool:</h4>
+                <p><strong>LONSDALE BUSES LIMITED</strong></p>
+                <p>THE COACH HOUSE, MIDDLETON</p>
+                <p>WHITE LUND INDUSTRIAL ESTATE</p>
+                <p>MORECAMBE, LA3 3BN</p>
+                <p>United Kingdom</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LONSDALE BUSES LIMITED. Registered in England and Wales.</p>
+        <p style="margin-top: 10px;">Contact Support: <a href="mailto:testdevtool@gmail.com">testdevtool@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
